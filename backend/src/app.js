@@ -7,7 +7,7 @@ const InventoryRouter=require("./routes/InventoryRoute")
 const cors = require("cors");
 app.use(
   cors({
-    origin: "https://sweet-shop-management-system-chi.vercel.app", 
+    origin: "https://sweet-shop-management-system-chi.vercel.app" || "http://localhost:5173", 
     credentials: true, 
   })
 );

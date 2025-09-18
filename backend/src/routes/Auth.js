@@ -4,7 +4,7 @@ const router = express.Router();
 const Register=require("../controllers/Register")
 const login=require("../controllers/login")
 const getuser=require("../controllers/user")
-const verify=require("../authetication")
+const verify=require("../auth/Authentication")
 // Route: POST /api/auth/register
 
 router.post("/Register",Register);

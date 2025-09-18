@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for sweet-shop-management-system",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "author": "Shreyash Purushottam Ghanekar, shreyasghanekar35@gmail.com",
+  "license": "ISC"
+}

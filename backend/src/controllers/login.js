@@ -2,6 +2,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const mongoconnect=require("../config/mongodbcon")
 const UserAccount = require("../model/UserModel");
+require("dotenv").config();
 if (process.env.NODE_ENV !== "test") {
     mongoconnect();
   }
@@ -29,7 +30,7 @@ const login = async (req, res) => {
     // ✅ Generate JWT Token
     const token = jwt.sign(
       { id: user._id, role: user.role },
-      "mydrive#@qwert123", // 🔒 Store in env file in real apps
+      process.env.JWT_SECRET, // 🔒 Store in env file in real apps
       { expiresIn: "1h" }
     );
 

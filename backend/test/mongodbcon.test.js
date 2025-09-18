@@ -1,6 +1,6 @@
 // const request = require("supertest");
 const mongoose =require("mongoose")
-const connectToDatabase= require("../src/mongodbcon");
+const connectToDatabase= require("../src/config/mongodbcon");
 
 
 describe("MongoDB Connection Utility", () => {

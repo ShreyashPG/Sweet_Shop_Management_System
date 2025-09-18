@@ -5,10 +5,16 @@ const authRouter=require("./routes/Auth")
 const SweetRouter=require("./routes/SweetsRoute")
 const InventoryRouter=require("./routes/InventoryRoute")
 const cors = require("cors");
+
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  process.env.LOCAL_URL
+];
+
 app.use(
   cors({
-    origin: "https://sweet-shop-management-system-chi.vercel.app" || "http://localhost:5173", 
-    credentials: true, 
+    origin: allowedOrigins,
+    credentials: true,
   })
 );
 

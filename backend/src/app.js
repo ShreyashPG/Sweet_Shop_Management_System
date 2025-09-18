@@ -5,7 +5,13 @@ const authRouter=require("./routes/Auth")
 const SweetRouter=require("./routes/SweetsRoute")
 const InventoryRouter=require("./routes/InventoryRoute")
 const cors = require("cors");
-app.use(cors())
+app.use(
+  cors({
+    origin: "https://sweet-shop-management-system-chi.vercel.app", 
+    credentials: true, 
+  })
+);
+
 app.use(express.json())
 
 app.use("/api/auth",authRouter)

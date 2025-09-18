@@ -98,6 +98,7 @@ For testing the admin panel functionality, use the following credentials:
 
 ## 📂 Project Structure
 
+```
 incubyte-sweet-shop/
 ├── backend/
 │ ├── node_modules/
@@ -146,7 +147,8 @@ incubyte-sweet-shop/
 │
 ├── .gitignore
 
-text
+```
+
 
 ---
 
@@ -158,32 +160,41 @@ text
 - Git
 
 ### Backend Setup
+
+```
 cd backend
 npm install
 npm install -g nodemon
+```
 
+```
 Create .env file with your MongoDB connection string
-echo "MONGODB_URI=mongodb://localhost:27017/sweet-shop" > .env
-echo "JWT_SECRET=your-jwt-secret-key" >> .env
+echo "MONGODB_URI=mongodb://localhost:27017/sweet-shop" 
+echo "JWT_SECRET=your-jwt-secret-key" 
 nodemon src/app.js
+```
 
-text
 
 ### Frontend Setup
+
+```
 cd sweet-shop-frontend
 npm install
+```
 
+```
 Create .env file with backend API URL
-echo "VITE_API_URL=http://localhost:5000" > .env
+echo "VITE_API_URL=http://localhost:5000"
 npm run dev
+```
 
-text
+
 
 ### Running Tests
+```
 cd backend
 npm test
-
-text
+```
 
 ---
 
@@ -268,48 +279,6 @@ AI tools served as powerful assistants for boilerplate generation and styling, w
 - Professionally styled form validations and toast notifications
 - Role-based authentication and authorization
 - API-integrated search and filtering capabilities
-
----
-
-## 📌 Final Commit Message
-
-git commit -m "feat: Complete Sweet Shop Management System 🎉
-
-Finished Admin Panel:
-
-Add, edit, delete, restock sweets
-
-Admin dashboard UI polish
-
-Category dropdown, validation, and responsive layout
-
-Finished User Dashboard:
-
-View sweets with real-time stock
-
-Purchase functionality with quantity selector
-
-API-integrated search, category filter, and price range filter
-
-Added backend filtering route /api/sweets/search with support for:
-
-name (regex)
-
-category (skips "All")
-
-price range (minPrice, maxPrice)
-
-Comprehensive test suite with Jest and Supertest
-
-Modern glassmorphism UI design with full responsiveness
-
-Complete documentation with AI usage transparency
-
-🎯 Project completed and ready for submission.
-
-Co-authored-by: ChatGPT chatgpt@openai.noreply.github.com"
-
-text
 
 ---
 
